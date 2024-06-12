@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.book-form label {
+  font-weight: bold;
+}
+
 .eight-inputs {
   width: 100%;
   display: flex;

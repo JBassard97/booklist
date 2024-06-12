@@ -58,6 +58,7 @@ export default function BookForm() {
       list: "",
       dateRead: "",
     });
+    window.location.reload();
   };
 
   return (
