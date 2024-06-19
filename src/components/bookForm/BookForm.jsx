@@ -2,7 +2,7 @@ import "./bookForm.css";
 import { useState, useEffect } from "react";
 import { todaysDate } from "../../utils/todaysDate";
 
-export default function BookForm() {
+export default function BookForm({ borderColor }) {
   const [formState, setFormState] = useState({
     title: "",
     author: "",
@@ -73,6 +73,7 @@ export default function BookForm() {
               id="title"
               name="title"
               value={formState.title}
+              style={{ border: `2px solid ${borderColor}` }}
               onChange={handleChange}
             />
 
@@ -82,6 +83,7 @@ export default function BookForm() {
               id="author"
               name="author"
               value={formState.author}
+              style={{ border: `2px solid ${borderColor}` }}
               onChange={handleChange}
             />
 
@@ -91,6 +93,7 @@ export default function BookForm() {
               id="editOrTrans"
               name="editOrTrans"
               value={formState.editOrTrans}
+              style={{ border: `2px solid ${borderColor}` }}
               onChange={handleChange}
             />
 
@@ -100,6 +103,7 @@ export default function BookForm() {
               id="publisher"
               name="publisher"
               value={formState.publisher}
+              style={{ border: `2px solid ${borderColor}` }}
               onChange={handleChange}
             />
           </div>
@@ -110,6 +114,7 @@ export default function BookForm() {
               id="year"
               name="year"
               value={formState.year}
+              style={{ border: `2px solid ${borderColor}` }}
               onChange={handleChange}
             />
 
@@ -119,6 +124,7 @@ export default function BookForm() {
               id="edition"
               name="edition"
               value={formState.edition}
+              style={{ border: `2px solid ${borderColor}` }}
               onChange={handleChange}
             />
 
@@ -128,6 +134,7 @@ export default function BookForm() {
               name="type"
               value={formState.type}
               onChange={handleChange}
+              style={{ border: `2px solid ${borderColor}` }}
             >
               <option value="">Select Type</option>
               <option value="Anthology/Collection">Anthology/Collection</option>
@@ -147,6 +154,7 @@ export default function BookForm() {
               onChange={handleChange}
               id="list"
               name="list"
+              style={{ border: `2px solid ${borderColor}` }}
             >
               <option value="">Select List</option>
               <option value="Field 1">Field 1</option>
